@@ -138,9 +138,7 @@ g_DoubleAlt := false
     KeyWait "Alt"  ; This prevents the keyboard's auto-repeat feature from interfering.
 }
 
-;;;
-; Launch Notepad++
-;;;
+; --- Launch Notepad++ ---
 
 ^!n::  ; Ctrl+Alt+N
 {
@@ -150,16 +148,12 @@ g_DoubleAlt := false
         Run "Notepad++"
 }
 
-;;;
-; Disable caps lock
-;;;
+; --- Disable caps lock--- 
 
 SetCapsLockState("AlwaysOff")
 return
 
-;;;
-; Text Expansions
-;;;
+; --- Text Expansions ---
 
 ; When ;ticket is typed, AHK will prompt for a ticket number and then insert a markdown style link to the ticket in Portal.
 #HotIf WinActive("ahk_exe Code - Insiders.exe")
