@@ -151,7 +151,6 @@ g_DoubleAlt := false
 ; --- Disable caps lock--- 
 
 SetCapsLockState("AlwaysOff")
-return
 
 ; --- Text Expansions ---
 
