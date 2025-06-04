@@ -162,7 +162,7 @@ SetCapsLockState("AlwaysOff")
     result := InputBox("Enter the ticket number:", "Ticket Number")
 
     if result.Result = "OK" && RegExMatch(result.Value, "^\d+$") {
-        SendText("[Ticket #" result.Value "](https://portal.northeastprecast.com/Support/" result.Value ")")
+        SendText("[Ticket #" result.Value "](https://portal.northeastprecast.com/Tickets/" result.Value ")")
     }
 }
 
