@@ -156,7 +156,6 @@ SetCapsLockState("AlwaysOff")
 
 ; When ;ticket is typed, AHK will prompt for a ticket number and then insert a markdown style link to the ticket in Portal.
 #HotIf WinActive("ahk_exe Code - Insiders.exe")
-
 ::;ticket::
 {
     result := InputBox("Enter the ticket number:", "Ticket Number")
@@ -165,5 +164,9 @@ SetCapsLockState("AlwaysOff")
         SendText("[Ticket #" result.Value "](https://portal.northeastprecast.com/Tickets/" result.Value ")")
     }
 }
-
 #HotIf
+
+; Email addresses
+::;wem::rsaull@northeastprecast.com
+::;pem::ricky.saull@gmail.com
+::;em::ricky@saull.net
